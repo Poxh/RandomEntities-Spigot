@@ -1,0 +1,9 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="RandomizeEntities:jar">
+    <output-path>$PROJECT_DIR$/../Private Server/plugins</output-path>
+    <root id="archive" name="RandomizeEntities.jar">
+      <element id="module-output" name="RandomizeEntities" />
+      <element id="file-copy" path="$PROJECT_DIR$/src/main/resources/plugin.yml" />
+    </root>
+  </artifact>
+</component>

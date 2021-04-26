@@ -7,7 +7,7 @@
     <groupId>org.example</groupId>
     <artifactId>RandomizeEntities</artifactId>
     <version>1.0-SNAPSHOT</version>
-    
+
     <repositories>
         <!-- This adds the Spigot Maven repository to the build -->
         <repository>
