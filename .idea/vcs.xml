@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="VcsDirectoryMappings">
+    <mapping directory="$PROJECT_DIR$" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/Angular-Learning" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/Angular-Nodes" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/Flutter-Weather" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/MlgRush" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/Portfolio" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/RandomEntities-Spigot" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/Website-First" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/Website-First/website" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/react-portfolio-template" vcs="Git" />
+  </component>
+</project>
