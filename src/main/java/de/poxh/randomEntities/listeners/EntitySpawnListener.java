@@ -23,9 +23,6 @@ public class EntitySpawnListener implements Listener {
 
     @EventHandler
     public void onSpawn(EntitySpawnEvent entitySpawnEvent) {
-        if (true) {
-            return;
-        }
 
         Entity entity = entitySpawnEvent.getEntity();
 
