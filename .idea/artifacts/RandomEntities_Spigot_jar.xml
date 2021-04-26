@@ -1,0 +1,9 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="RandomEntities-Spigot:jar">
+    <output-path>$PROJECT_DIR$/../1.16-Server/plugins</output-path>
+    <root id="archive" name="RandomEntities-Spigot.jar">
+      <element id="module-output" name="RandomEntities-Spigot" />
+      <element id="file-copy" path="$PROJECT_DIR$/src/main/resources/plugin.yml" />
+    </root>
+  </artifact>
+</component>

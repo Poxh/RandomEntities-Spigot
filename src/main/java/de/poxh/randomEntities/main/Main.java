@@ -2,6 +2,7 @@ package de.poxh.randomEntities.main;
 
 import de.poxh.randomEntities.commands.Command_entity;
 import de.poxh.randomEntities.listeners.PlayerjoinListener;
+import org.apache.commons.lang.RandomStringUtils;
 import org.bukkit.Bukkit;
 import org.bukkit.plugin.java.JavaPlugin;
 

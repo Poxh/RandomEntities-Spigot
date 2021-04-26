@@ -1,6 +1,7 @@
 package de.poxh.randomEntities.listeners;
 
 import de.poxh.randomEntities.main.Main;
+import org.apache.commons.lang.RandomStringUtils;
 import org.bukkit.Bukkit;
 import org.bukkit.World;
 import org.bukkit.entity.Entity;
@@ -31,7 +32,8 @@ public class PlayerjoinListener implements Listener {
             float entityZ = entity.getLocation().getBlockZ();
 
             String entityFinalLocation = "§cX: " + entityX + " §cY: " + entityY + " §cZ: " + entityZ;
-            Main.entityMap.put(entity.getName(), entityFinalLocation);
+            String randomID = RandomStringUtils.random(8, true, true);
+            Main.entityMap.put(entity.getName() + " ID§c->" + randomID, entityFinalLocation);
         }
     }
 }
