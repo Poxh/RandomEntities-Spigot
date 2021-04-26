@@ -12,6 +12,8 @@ import org.bukkit.event.player.PlayerJoinEvent;
 import org.bukkit.plugin.PluginManager;
 
 import java.util.Map;
+import java.util.Objects;
+import java.util.Optional;
 
 public class PlayerjoinListener implements Listener {
 
@@ -25,7 +27,6 @@ public class PlayerjoinListener implements Listener {
         World world = Bukkit.getWorld("world");
 
         for (Entity entity : world.getEntities()) {
-            Main.instance.log("§cEntity: " + entity.getName());
 
             float entityX = entity.getLocation().getBlockX();
             float entityY = entity.getLocation().getBlockY();
@@ -33,7 +34,12 @@ public class PlayerjoinListener implements Listener {
 
             String entityFinalLocation = "§cX: " + entityX + " §cY: " + entityY + " §cZ: " + entityZ;
             String randomID = RandomStringUtils.random(8, true, true);
-            Main.entityMap.put(entity.getName() + " ID§c->" + randomID, entityFinalLocation);
+
+            if(!Main.entityMap.containsKey(entity.getName() + " ID§c->" + randomID)) {
+                Main.entityMap.put(entity.getName() + " ID§c->" + randomID, entityFinalLocation);
+            } else {
+                Main.instance.log(entity.getName() + " ID§c->" + randomID + " existiert bereits.");
+            }
         }
     }
 }
