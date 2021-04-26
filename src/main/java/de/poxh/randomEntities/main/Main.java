@@ -1,5 +1,6 @@
 package de.poxh.randomEntities.main;
 
+import de.poxh.randomEntities.commands.Command_entity;
 import de.poxh.randomEntities.listeners.PlayerjoinListener;
 import org.bukkit.Bukkit;
 import org.bukkit.plugin.java.JavaPlugin;
@@ -25,6 +26,9 @@ public class Main extends JavaPlugin {
 
         //register all listeners
         new PlayerjoinListener(this);
+
+        //register all commands
+        getCommand("entity").setExecutor(new Command_entity());
     }
 
     public void log(String message) {

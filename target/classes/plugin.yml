@@ -1,3 +1,5 @@
 name: RandomEntities
 version: 1.0.0
 main: de.poxh.randomEntities.main.Main
+commands:
+  entity:
